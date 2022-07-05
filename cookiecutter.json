@@ -1,0 +1,10 @@
+{
+    "Select Type of Project": ["Microservice"],
+    "Select API": ["REST", "GrapgQL (Unimplemented)"],
+    "Select Database": ["Postgres"],
+    "Project_Name": "Name for the microservice",
+    "Postgres_User": "",
+    "Postgres_Password": "",
+    "Postgres_DB": "",
+    "Postgres_User_Test": "Leave blank if not needed"
+}

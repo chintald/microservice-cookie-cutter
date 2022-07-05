@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "Yt stories"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^8.1.3"
+uvicorn = "^0.17.6"
+alembic = "^1.8.0"
+SQLAlchemy = "^1.4.37"
+pydentic = "^0.0.1-alpha.3"
+fastapi = "^0.78.0"
+asyncpg = "^0.25.0"
+PyJWT = "^2.4.0"
+aioredis = "^2.0.1"
+ujson = "^5.3.0"
+email-validator = "^1.2.1"
+python-dotenv = "^0.20.0"
+psycopg2-binary = "^2.9.3"
+python-decouple = "^3.6"
+fastapi-utils = "^0.2.1"
+pythondi = "^1.2.4"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.19.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
