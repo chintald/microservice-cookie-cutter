@@ -8,6 +8,5 @@
     "Postgres_DB": "",
     "Postgres_User_Test": "Leave blank if not needed",
     "Server_Name": "",
-    "Docker_Stack_Name": "",
-   
+    "Docker_Stack_Name": ""
 }
