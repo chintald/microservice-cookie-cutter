@@ -5,8 +5,8 @@ from pydantic import ValidationError
 from pythondi import Provider, configure
 
 from app import router
-from app.v1.user import UserRepo
-from app.v1.user.repository.user_repo import UserMySQLRepo
+# from app.v1.user import UserRepo
+# from app.v1.user.repository.user_repo import UserMySQLRepo
 from config import AppEnvironment, config
 from core.exceptions import CustomException
 from core.fastapi.dependencies import Logging
@@ -73,7 +73,8 @@ def init_cache() -> None:
 
 def init_di() -> None:
     provider = Provider()
-    provider.bind(UserRepo, UserMySQLRepo)
+    # TODO: Make proper changes below
+    # provider.bind(UserRepo, UserMySQLRepo)
     configure(provider=provider)
 
 
