@@ -7,7 +7,9 @@ from alembic import context
 from sqlalchemy import pool
 from sqlalchemy.ext.asyncio import create_async_engine
 
-from app.v1.user.models.user_model import Base
+
+# TODO: Import your base class here once defined
+# from app.v1.user.models.user_model import Base
 from config import config as conf
 
 parent_dir = os.path.abspath(os.path.join(os.getcwd(), ".."))
@@ -33,8 +35,11 @@ fileConfig(config.config_file_name)
 
 # For auto generate schemas
 
+# TODO: Uncomment below code once Base is imported.
+# target_metadata = Base.metadata
 
-target_metadata = Base.metadata
+# TODO: Remove target_metadata below as we imported Base above.
+target_metadata = None
 
 # other values from the config, defined by the needs of env.py,
 # can be acquired:
